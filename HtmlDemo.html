@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableDemo</title>
+</head>
+<body>
+    <table border="2" style="border-collapse:collapse; width:100%;">
+         <!-- using boder attribute on a table results into double lins because a line
+        or border is provided for each cell and another border for the table -->
+        <caption>First Web Developer Course</caption>
+        <thead>
+            <tr style="height: 50px;">
+                <th scope="col" style="width:50px">Person</th>
+                <th scope="col" style="width: 20px;">Most interest in</th>
+                <th scope="col" style="width: 20px;">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height:50px">
+                <!-- scope-defines which cells a header applies to in a table -->
+                 <!-- scope="colgrp"..used when we have columns but grouped under the
+                  the same header ie a heafder applies to group of columns-->
+                <th scope="row" style="text-align: left;">Chris</th>
+                <td>Html tables</td>
+                <td>22</td>
+            </tr style="height:50px">
+            <tr style="height:50px">
+                <!-- by default,cell headers <th> center align their text yet 
+                    <td> leftvalign theirs -->
+                <th scope="row" style="text-align: left;">Denis</th>
+                <td>Web Accessibility</td>
+                <td>45</td>
+            </tr>
+            <tr style="height:50px">
+                <th scope="row" style="text-align: left;">Sarah</th>
+                <td>Javascript Frameworks</td>
+                <td>29</td>
+            </tr>
+            <tr style="height:50px">
+                <th scope="row" style="text-align: left;">Karen</th>
+                <td>Web Performance</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row" colspan="2" style="height:50px; text-align:left;" >Average Age</th>
+            <td>33</td>
+        </tfoot>
+    </table>
+</body>
+</html>
